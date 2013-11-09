@@ -60,5 +60,25 @@ letter-spacing: -1px;
 color: #fff;
 }
 
+#mainpage ul {
+margin: 20px;
+}
+
+#mainpage li {
+list-style-type: square;
+font-size: 17px;
+line-height: 20px;
+}
+
+#mainpage a{
+	color:#FFF;
+	text-decoration:none;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+#mainpage a:hover{
+	color: #36F;
+}
+
+
 #Footer {width:800px;margin:0 auto;height:50px;}
 
