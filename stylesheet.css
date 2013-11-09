@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document */
+body{margin:0;color:#FFF; background-image:url('images/back1ground.jpg');}
+
+#container {width:100%;
+			 }
+
+#header {width:800px;margin:0 auto;height:100px;font:12px Tahoma;text-align:center;}
+
+#header a{
+	color:#FFF;
+	text-decoration:none;
+}
+#header a:hover{
+	color: #36F;
+}
+
+#PageBody {width:1280px;margin:0 auto;height:400px;}
+
+#sidebar {position: absolute;
+	top: 140px;
+	left: 40px;
+	width: 200px;
+	padding: 20px 20px 20px 0;
+	border-right: 1px solid #ccc;
+	text-align: center;
+}
+
+#sidebar h2 {
+text-transform: uppercase;
+font-size: 14px;
+color: #FFF;
+letter-spacing: 1px;
+line-height: 20px;
+}
+
+#sidebar a{
+	color:#FFF;
+	font:13px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-decoration:none;
+}
+
+#sidebar a:hover{
+	color: #36F;
+}
+
+#mainpage {
+position: absolute;
+top: 140px;
+left: 280px;
+width: 500px;
+}
+
+#mainpage h1 {
+font-size: 40px;
+font-weight: normal;
+line-height: 40px;
+letter-spacing: -1px;
+color: #fff;
+}
+
+#Footer {width:800px;margin:0 auto;height:50px;}
+
