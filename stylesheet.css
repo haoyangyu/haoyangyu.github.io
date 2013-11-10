@@ -71,7 +71,7 @@ line-height: 20px;
 }
 
 #mainpage a{
-	color:#FFF;
+	color:#09F;
 	text-decoration:none;
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
@@ -79,6 +79,17 @@ line-height: 20px;
 	color: #36F;
 }
 
+#mainpage p {
+margin: 20px 0;
+font-size: 17px;
+line-height: 20px;
+color: #fff;
+}
 
-#Footer {width:800px;margin:0 auto;height:50px;}
+#footer {width:800px;margin:0 auto;height:50px;
+		 font:12px Tahoma;text-align:center;
+		 margin:0 auto;
+		 position: absolute;
+		 top: 800px;
+		 left: px;}
 
