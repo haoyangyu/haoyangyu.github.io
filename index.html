@@ -1,9 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Haoyang Yu - Home</title>
-<link rel="stylesheet" type="text/css" href="/stylesheet.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- KICKSTART -->
+<script src="js/kickstart.js"></script> 
+ <!-- KICKSTART -->
+<link rel="stylesheet" href="css/kickstart.css" media="all" />
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="jquery.bxslider.css" rel="stylesheet" />
+<!-- SelfDefine -->
+<link rel="stylesheet" type="text/css" href="css/indexstyle.css"  media="all"/>
+<!--UsedforTracking -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -16,51 +28,42 @@
 </script>
 </head>
 
-<body>
-<div id="container" ><!--For the whole page-->
-	<div id="header">
-    <!--This the header for my webpage-->
-    	<h1 >Haoyang Yu</h1>
-       <h4>Tel:(732)-318-4504<br>
-       		E-mail:<a href=mailto:haoyang.yu@rutgers.edu>haoyang.yu@rutgers.edu</a><br>
-           Web: <a href="http://www.linkedin.com/pub/haoyang-yu/83/1a5/832/">linkedin</a></h4>
-      
-    	
-	</div>
+<body background="images/indexpage/background1.jpg">
+<!-- Slideshow -->
+<div id="slider">
+<ul class="bxslider">
+  <li><img src="images/indexpage/young.jpg" title="When I was young" /></li>
+  <li><img src="images/indexpage/timesquare.jpg" title="This time I went to NYC" /></li>
+  <li><img src="images/indexpage/homevisit.jpg" title="Celebrate Thanksgiving" /></li>
+  <li><img src="images/indexpage/offense.jpg" title="I love play basketball" /></li>
+  <li><img src="images/indexpage/tennis.jpg" title="Tennis, enjoy the time" /></li>
+  <li><img src="images/indexpage/fpga.jpg" title="My CameraTracking Project" /></li>
+  <li><img src="images/indexpage/road.jpg" title="Where is my road" /></li>
+</ul>
+</div>
+<script>
+	$(document).ready(function(){
+  		$('.bxslider').bxSlider({
+  			auto: true,
+  			autoControls: true,
+    		slideMargin: 5,
+  			slideWidth: 575,
+  			adaptiveHeight: true,
+  			mode: 'fade',
+  			captions: true
+		});
+	});
+</script>
 
-	<div id="pagebody"><!--The useful mainpart and the navigator-->
-		<div id="sidebar">
-        	<a href="/">
-        		<h2>Haoyang Yu</h2>
-       	 	</a>
-        	<a href="/images/profile_large.jpg">
-           	<img src="/images/profile.jpg"> 
-           </a>
-           <a href="/resume.html">Resume</a> | 
-           <a href="/currentProjects.html">Current Projects</a>
-           <br>
-           <a href="http://haoyangyu.wordpress.com">English Blog</a> | 
-           <a href="http://blog.sina.com.cn/u/1446537682">Chinese Blog</a>
-           <br>
-           <a href="http://www.facebook.com/haoyang.yu.100">Facebook</a> | 
-           <a href="http://www.renren.com/331870550">Renren</a>
-		</div>
-
-<div id="mainpage">
-    <h1>About me</h1>
-    <p>On August 22nd, 2013, through the plane flying from Beijing, China to Newark, America, I arrived at the country that I was dreaming since I was in high school. Everything is totally fresh to me, anyway I enjoy being a <em><strong>trailblazer</strong></em> to take adventure for my life.</p>
-    <p>Currently, I am in my first semester as a graduate student at <a href="http://www.rutgers.edu">Rutgers, newbrunswick university</a> studying in the field of computer engineering. Computer Architecture, Software Engineering and Software/hardware Embedded System are the courses I am taking in this semester, fall 2013.</p>
-    <p>Because when I was a undergraduate student in <a href="http://www.oice.uestc.edu.cn/en/">University of Electronic Science and Technology of China</a>(UESTC), I was not in the field of computer science, the subjects of my major are more focused on Electronic Engineering, however I studied a lot by myself. My friends and I were chosen to be team members representing UESTC to participate the <a href="http://www.comap.com/undergraduate/contests/mcm/">2013 MCM/ICM competition</a> and won <a href="2013MCMICM.pdf">the Honorable Mention Prize</a>, the <a href="2013MCMICMpaper.pdf">paper</a> is attached. Now, I hold the opinion that the strong foundation of EE and mathematics can contribute to my graduate years in CE. I enjoy all the challenges I faced and believe I can conquer them successfully.
-    </p>
-    <p>I am a sport aficionado. <a href="/images/jumpshoot.jpg">Basketball</a>, <a href="/images/tennis.jpg">tennis</a>, swimming, running, hiking and traveling are my favorite events. They make me energetic and healthy. I <em><strong>love</strong></em> life and <em><strong>cherish</strong></em> every moments of my life. Hoping I will have a wonderful and amazing life journey.</p>
-    
+<div class="entrence" >	  
+	<span class="english"><a href="/english.html"><button class="large red"><i class="icon-globe"></i>.EnglishVersion</button></a></span>
+	<span class="chinese"><a href=""><button class="large green"><i class="icon-user"></i> .中文版本_1.0</button></a></span>
 </div>
 
+<!-- ===================================== START FOOTER ===================================== -->
+	<div class="clear"></div>
+	<div id="footer">
+	&copy; Copyright 2013.12.19_Version2.0 All Rights Reserved. This website was built by <a href=mailto:haoyang.yu@rutgers.edu> <i class="icon-envelope"></i>Haoyang Yu</a>
 	</div>
-    
-	<div id="footer"><!--The footer-->
-        11/9/2013 version 1.0-HAOYANG YU
-	</div>
-</div>
 </body>
 </html>
